@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Display the list items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  font-size: 1.5rem;
+}
+
+nav ul li {
+  margin-right: 2%; /* Add some spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 90%; /* Changed from 600px to 90% of the container */
+  margin: 5% auto; /* Changed from 50px auto to 5% top/bottom and auto left/right */
+  padding: 5% 3%; /* Changed from 40px 30px to 5% top/bottom and 3% left/right */
+  background: #ffffff;
+  border-radius: 0.5%; /* Changed from 8px to 0.5% */
+  box-shadow: 0 0 1% rgba(0, 0, 0, 0.1); /* Changed from 10px to 1% for the blur radius */
+}
+
+.contact-form h2 {
+  margin-bottom: 3%; /* Changed from 30px to 3% */
+  font-size: 200%; /* Changed from 32px to 200% */
+  color: #333;
+  text-align: center;
+}
+
+.contact-form .form-group {
+  margin-bottom: 2.5%; /* Changed from 25px to 2.5% */
+}
+
+.contact-form label {
+  display: block;
+  font-size: 100%; /* Changed from 16px to 100% */
+  color: #555;
+  margin-bottom: 0.8%; /* Changed from 8px to 0.8% */
+}
+
+.contact-form label span {
+  color: #e74c3c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.2% 1.5%; /* Changed from 12px 15px to 1.2% 1.5% */
+  border: 1px solid #ccc;
+  border-radius: 0.3%; /* Changed from 5px to 0.3% */
+  font-size: 93.75%; /* Changed from 15px to 93.75% */
+  color: #333;
+  background: #f9f9f9;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3498db;
+  background: #fff;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 1.5%; /* Changed from 15px to 1.5% */
+  background: #3498db;
+  border: none;
+  border-radius: 0.3%; /* Changed from 5px to 0.3% */
+  font-size: 112.5%; /* Changed from 18px to 112.5% */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .contact-form {
+      padding: 3% 2%; /* Changed from 30px 20px to 3% 2% */
+      margin: 3% 1.5%; /* Changed from 30px 15px to 3% 1.5% */
+  }
+
+  .contact-form h2 {
+      font-size: 175%; /* Changed from 28px to 175% */
+  }
+}
